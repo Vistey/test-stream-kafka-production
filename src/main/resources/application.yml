@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: output-demo
+  cloud:
+    stream:
+      bindings:
+        testOutputString:
+          destination: timerTopic
+          content-type: application/json
